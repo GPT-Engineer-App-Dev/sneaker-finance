@@ -1,25 +1,7 @@
-import { CircleUser, Menu, Package2, Search } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { CircleUser, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Outlet } from "react-router-dom";
 
 function SharedLayout() {
@@ -32,18 +14,6 @@ function SharedLayout() {
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Home
-          </a>
-          <a
-            href="/add-transaction"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Add Transaction
-          </a>
-          <a
-            href="/view-transactions"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            View Transactions
           </a>
         </nav>
         <Sheet>
@@ -64,18 +34,6 @@ function SharedLayout() {
                 className="text-muted-foreground hover:text-foreground"
               >
                 Home
-              </a>
-              <a
-                href="/add-transaction"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Add Transaction
-              </a>
-              <a
-                href="/view-transactions"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                View Transactions
               </a>
             </nav>
           </SheetContent>
@@ -103,7 +61,7 @@ function SharedLayout() {
         <Outlet />
       </main>
     </div>
-  )
+  );
 }
 
 export default SharedLayout;
